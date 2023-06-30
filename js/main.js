@@ -1,6 +1,6 @@
 const slideLeft = document.querySelector('.swiper-button-prev');
 const slideRight = document.querySelector('.swiper-button-next');
-const slideImg = document.querySelector('.swiper-slide');
+const slideImg = document.querySelector('.swiper-wrapper');
 let index = 0; // Индекс текущего слайда.
 
 
@@ -34,13 +34,12 @@ function showSlide() {
          slide.style.display = 'none'
       }
    });
-
    if (index === 0) {
       slideLeft.classList.add('dell');
    } else {
       slideLeft.classList.remove('dell');
    }
-   if (index === slides.length - 1) {
+   if (index === 1) {
       slideRight.classList.add('dell');
    } else {
       slideRight.classList.remove('dell');
